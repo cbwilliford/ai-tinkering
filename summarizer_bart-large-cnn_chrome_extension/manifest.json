@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Summarize",
+  "short_name": "Summarize",
+  "description": "Summarize any article",
+  "version": "0.1",
+  "permissions": [
+    "tabs",
+    "activeTab",
+    "storage",
+    "unlimitedStorage",
+    "scripting"
+  ],
+  "host_permissions": ["https://*/*", "http://*/*"],
+  "background": {
+    "service_worker": "./background.js",
+    "type": "module"
+  },
+  "action": {
+    "default_icon": {
+      "16": "summarize-icon.png"
+    },
+    "default_title": "Summarize",
+    "default_popup": "popup.html"
+  },
+  "icons": { "128": "summarize-icon.png" }
+}
